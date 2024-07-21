@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhZGlwcmF0YW1hIiwiZW1haWwiOiJhZGlwcmF0YW1hQGdtYWlsLmNvbSIsImlhdCI6MTcwODAwODc3OSwiZXhwIjoxNzA4MDA4Nzk5fQ.jX9vbiRs6BH40i4cuAI4BWL7GdPMaRTq860HB1fD1ss
+###
+
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "adipratama",
+    "email" : "adipratama@gmail.com",
+    "password" : "12345678",
+    "confPassword" : "12345678"
+}
+
+###
+
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "adipratama@gmail.com",
+    "password" : "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
